@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.heroSection{
+    display: flex;
+    height: 750px;
+    width: 100%;
+    background-image: url('/assets/images/hero.png');
+    background-size: cover;
+    padding: 150px 28px 215px;
+}
+
+.heroContent{
+    height: 435px;
+    width: 670px;
+    margin-left: 100px;
+}
+
+.mainslider{
+    font-size: 35px;
+    color: #333;
+    font-family: cursive;
+    position: relative;
+    animation: slide-down 10s ease-out infinite;
+    /* animation-delay: 15s; */
+    /* animation-direction:initial; */
+
+}
+
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    10%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.main-slider{
+    font-size: 65px;
+    font-family: sans-serif;
+    font-weight: 650;
+    color: #0f0f0f;
+    margin: 10px 0 30px;
+    animation: slide-down 10s ease-out infinite;
+    /* animation-delay: 15s;
+    animation-direction: initial; */
+    /* animation-direction: initial; */
+}
+
+
+.heroContent h3{
+    font-size: 27px;
+    font-family: sans-serif;
+    color: #0f0f0f;
+    margin: 0px 0px 16px;
+    animation: slide-up 10s ease-out infinite;
+    /* animation-delay: 15s; */
+    /* animation-direction: initial; */
+}
+
+.hero-bottom{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0f0f0f;
+    margin: 0px 0px 43px;
+    animation: slide-up 10s ease-out infinite;
+    /* animation-delay: 15s; */
+    /* animation-direction: initial; */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    10%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main-button{
+    height: 56px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    background-color: #11ADED;
+    cursor: pointer;
+    animation: slide-up 10s ease-out infinite;
+    /* animation-delay: 15s; */
+    /* animation-direction: initial; */
+    &:hover{
+        box-shadow: 0px 4px 20px rgba(17, 173, 237, 0.5);
+        transform: scale(1.005);
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.experience{
+    height: 215px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    overflow: visible;
+}
+
+.exp, .vid, .rat{
+    height: 110%;
+    position: relative;
+    top: -10%;
+    overflow: hidden;
+}
+
+.exp{
+    background-color: #27445D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 20px;
+}
+
+.exp h1{
+    font-size: 7rem;
+    color: white;
+    margin: 20px;
+}
+
+.exp p{
+    font-size: 12px;
+    color: white;
+}
+
+.exp h3{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.vid img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.rating{
+    height: 95%;
+    width: 100%;
+    position: relative;
+    bottom: -8%;
+    background-color: #061F31;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+#customer-trust{
+    height: 70px;
+    width: 550px;
+    display: flex;
+}
+
+.trust-icon{
+    height: 100%;
+    width: 15%;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.trust-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+.trust-para{
+    height: 100%;
+    width: 45%;
+    font-family: sans-serif;
+    padding-left: 40px;
+    font-size: 23px;
+    color: white;
+}
+
+
+
+
+
+

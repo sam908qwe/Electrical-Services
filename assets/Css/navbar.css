@@ -1,0 +1,133 @@
+.navbar{
+    background-color: #fff;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 5px 10px;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    /* margin: 10px; */
+    /* position:relative;
+    z-index: 1000; */
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 90%;
+    width: 90%;
+}
+
+.navList{
+    width: 60%;
+    height: 95%;
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* &:hover{
+        color: #11ADED;
+    } */
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    &:hover{
+        color: #11ADED;
+    }
+}
+
+.searchIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 40px;
+}
+
+.searchIcon img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+
+/* styling for serach icon hover */
+
+.search-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.searchBox{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    height: 50px;
+}
+
+.icon-overlay{
+    background-color: rgb(242, 255, 0);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+
+/*special class for navbar desing */
+
+/*poora web page banne ke baad kaam hoga isme */
+
+/* .fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+

@@ -1,0 +1,217 @@
+.ourTeam{
+    height: 850px;
+    background-color: #EAEDFD;
+    padding: 215px 0 70px;
+    overflow-x: hidden;
+}
+
+.ourTeam-container{
+    height: 100%;
+    width: 100%;
+    margin: 0 60px;
+    padding: 0 80px;
+}
+
+.team-header{
+    height: 20%;
+    width: 100%;
+    background-color: #EAEDFD;
+}
+
+.team-header p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #00A7EB;
+}
+
+.team-header h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-top: 10px;
+    color: #0B1A3A;
+}
+
+
+/*Team Members */
+
+.team-members{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    background-color: #EAEDFD;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-mem-box{
+    width: 290px;
+    height: 380px;
+    background-image: url('../images/ourTeam/TeamEngineerI.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.member-name{
+    height: 90px;
+    width: 200px;
+    position:absolute;
+    bottom: 0;
+    background-color: rgba(68, 205, 220, 0.658);
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-name h1{
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.member-name p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+/*Team Overlay */
+
+.team-social-handels {
+    height: 40px;
+    width: 40px;
+    /* background-image: url('../images/ourTeam/share.png');
+    background-size: cover; */
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.team-social-handels-after-mouseover{
+    height: 40px;
+    width: 40px;
+    /* background-image: url('../images/ourTeam/share.png');
+    background-size: cover; */
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background-color: #fff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.team-social-handels a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-mem-box a img{
+    height: 50%;
+    width: 50%;
+}
+
+.social-over-animate{
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    animation: scale-up-ver-top-normal 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s 1 normal both;
+    /* visibility: hidden; */
+}
+
+
+
+@keyframes scale-up-ver-top-normal {
+    0% {
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+}
+
+.social-out-animate{
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    animation: scale-up-ver-down-normal 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s 1 normal both;
+}
+
+@keyframes scale-up-ver-down-normal {
+    0% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+    100%{
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+}
+
+.socialOverlay{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+.socialOverlay ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.socialOverlay ul li{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.socialOverlay ul li i{
+    font-size: 2rem;
+    color: #0B1A3A;
+}
+
+
+
+
+
+
+
+
