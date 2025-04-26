@@ -1,16 +1,20 @@
-let teamMemBox = document.querySelectorAll(".team-mem-box");
+let teamBoxes = document.querySelectorAll(".team-box");
+let teamBoxContainer = document.querySelector(".team-box-container");
 
 
-teamMemBox.forEach((box) => {
-    let socialOverlay = box.querySelector(".socialOverlay");
+
+teamBoxes.forEach((box) => {
+    const teamBoxOverlay = box.querySelector(".team-box-overlay");
     box.addEventListener("mouseover", () => {
-        socialOverlay.style.visibility = "visible";
-        socialOverlay.classList.add("social-over-animate");
-        socialOverlay.classList.remove("social-out-animate");
+        teamBoxOverlay.classList.add("team-box-overlay-effect");
+        teamBoxOverlay.classList.remove("team-box-overlay-outer");
+        console.log("sameer");
     })
 
-    box.addEventListener("mouseleave", () => {
-        socialOverlay.classList.remove("social-over-animate");
-        socialOverlay.classList.add("social-out-animate");
-    })
+    box.addEventListener("mouseleave", (evts) => {
+            teamBoxOverlay.classList.remove("team-box-overlay-effect");
+            teamBoxOverlay.classList.add("team-box-overlay-outer");
+    } )
+
+
 })
