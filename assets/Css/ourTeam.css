@@ -39,7 +39,6 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    position: relative;
 }
 
 .team-box{
@@ -48,28 +47,9 @@
     background-color: #00A7EB;
     background-image: url('../images/ourTeam/TeamEngineerI.jpg');
     background-size: cover;
+    position: relative;
 }
 
-.team-box-engineer-image{
-    animation: bigger 2s forwards;
-}
-
-@keyframes bigger {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(-1);
-    }
-    
-}
-
-
-/* .team-box-overlay{
-    /* height: 100%;
-    width: 100%;
-    /* background-color: #0B1A3A;
-    opacity: 0.4; */
 
 
 
@@ -79,7 +59,7 @@
     overflow: none;
 }
 
-/*style with hover */
+/* ================= style with hover  =============== */
 
 .team-box-overlay-effect{
 background-color: #0B1A3A;
@@ -121,40 +101,150 @@ to{
 /* ========= Team Member Name ============ */
 
 .teamMemberName{
+    height: 80px;
+    width: 190px;
+    border-top-right-radius: 40px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     font-size: 2rem;
-    color: blue;
-}
-
-/* .team-content-header{
-    height: 15%;
-    width: 100%;
-    padding-bottom: 48px;
-}
-
-.team-content-header p{
-    font-size: 1.2rem;
-    color: #00A7EB;
-    font-weight: 600;
-}
-
-.team-content-header h1{
-    font-size: 3rem;
-    color:#0B1A3A;
-    font-weight: 600;
-    margin-top: 15px;
-}
-
-.team-boxes{
-    height: 80%;
-    width: 100%;
+    color: white;
+    background-color: rgb(79, 181, 204);
     display: flex;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.member-box{
-    height: 80%;
-    width: 20%;
-    background-color: green;
-} */
+.teamMemberName h1, p{
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.teamMemberName h1{
+    font-size: 1.6rem;
+}
+
+.teamMemberName p{
+    font-size: 1rem;
+}
+
+
+
+/*============TEAM SHARE BUTTONS ICON ===========*/
+
+.team-share-but{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============= TEAM SHARE BUT EFFECT ========== */
+
+.team-share-but-effect{
+    animation: changeRadius 2s forwards;
+}
+
+@keyframes changeRadius {
+    from{
+        border-radius: 50%;
+    }
+    to{
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+
+/* ============== TEAM-SHARE-BUT-REMOVE ========= */
+
+.team-share-but-eftOut{
+    animation: setRadius 2s forwards;
+}
+
+@keyframes changeRadius{
+    from{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    to{
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+}
+
+
+
+/*======= Team Social Handels ========== */
+
+.team-social-handels{
+    height: 130px;
+    width: 45px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+/* =========== Team social handels effect  ============== */
+
+.team-social-handels-effect{
+    animation: wrap-down 1s forwards;
+}
+
+@keyframes wrap-down {
+    from{
+        transform: scaleY(0);
+        transform-origin: 100% 0;
+    }
+    to{
+        transform: scaleY(1);
+        transform-origin: 100% 0;
+    }   
+}
+
+
+/* ============ Team social eftOut ============ */
+
+.team-social-handels-eftOut{
+    animation: wrap-up 1s forwards;
+}
+
+@keyframes wrap-up {
+    from{
+        transform: scaleY(1);
+        transform-origin: 100% 0;
+    }
+    to{
+        transform: scaleY(0);
+        transform-origin: 100% 0;
+    }
+}
+
+.team-social-handels i{
+    font-size: 1.7rem;
+    margin-top: 10px;
+    color: black;
+}
+
+
+
+
+
