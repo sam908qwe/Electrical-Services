@@ -150,7 +150,7 @@ to{
 /* ============= TEAM SHARE BUT EFFECT ========== */
 
 .team-share-but-effect{
-    animation: change-radius 2s forwards;
+    animation: change-radius 1s forwards;
 }
 
 
@@ -165,7 +165,55 @@ to{
 }
 
 
+/* ================ TEAM SHARE BUT EFT OUT ================ */
+
+.team-share-but-outeft{
+    animation: reverse-radius 1s forwards;
+}
+
+@keyframes reverse-radius {
+    from{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    to{
+        border-radius: 50%;
+    }
+}
+
+
 /*  ==================== TEAM SOCIAL HANDELS =========== */
+
+.team-social-handels{
+    height: 125px;
+    width: 45px;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    background-color: #00A7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =============== TEAM-SOCIAL-HANDELS-EFFECT =========== */
+
+.team-social-handels-effect{
+    animation: social-expand 1s forwards;
+}
+
+@keyframes social-expand {
+    from{
+        transform: scaleY(0);
+        transform-origin: 100% 0;
+    }
+    to{
+        transform: scaleY(1);
+        transform-origin: 100% 0;
+    }
+}
 
 .team-social-handels i{
     font-size: 1.7rem;
