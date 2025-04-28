@@ -149,7 +149,23 @@ to{
 
 /* ============= TEAM SHARE BUT EFFECT ========== */
 
+.team-share-but-effect{
+    animation: change-radius 2s forwards;
+}
 
+
+@keyframes change-radius {
+    from{
+        border-radius: 50%;
+    }   
+    to{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    } 
+}
+
+
+/*  ==================== TEAM SOCIAL HANDELS =========== */
 
 .team-social-handels i{
     font-size: 1.7rem;
