@@ -15,7 +15,7 @@
 .team-content-header{
     height: 20%;
     width: auto;
-    text-align: center;
+    margin-left: 75px;
 }
 
 .team-content-header p{
@@ -52,7 +52,6 @@
 
 
 
-
 .team-box-overlay{
     height: 100%;
     width: 100%;
@@ -83,7 +82,7 @@ to{
 .team-box-overlay-outer{
     background-color: #0B1A3A;
     opacity: 0.4;
-    animation: shutter-down 2s forwards;
+    animation: shutter-down 0.5s forwards;
 }
 
 @keyframes shutter-down {
@@ -141,16 +140,22 @@ to{
     position: absolute;
     right: 15px;
     top: 20px;
-    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* ================ TEAM SHARE BUT (i) ============= */
+
+    .team-share-but i{
+        font-size: 1.4rem;
+        color: grey;
+    }
+
 /* ============= TEAM SHARE BUT EFFECT ========== */
 
 .team-share-but-effect{
-    animation: change-radius 1s forwards;
+    animation: change-radius 0.5s forwards;
 }
 
 
@@ -168,7 +173,7 @@ to{
 /* ================ TEAM SHARE BUT EFT OUT ================ */
 
 .team-share-but-outeft{
-    animation: reverse-radius 1s forwards;
+    animation: reverse-radius 0.5s forwards;
 }
 
 @keyframes reverse-radius {
@@ -185,41 +190,75 @@ to{
 /*  ==================== TEAM SOCIAL HANDELS =========== */
 
 .team-social-handels{
-    height: 125px;
+    height: 135px;
     width: 45px;
     position: absolute;
     right: 15px;
     top: 65px;
-    background-color: #00A7EB;
+    background-color: wheat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
+
 
 
 /* =============== TEAM-SOCIAL-HANDELS-EFFECT =========== */
 
 .team-social-handels-effect{
-    animation: social-expand 1s forwards;
+    animation: social-expand 0.5s forwards;
 }
 
 @keyframes social-expand {
     from{
         transform: scaleY(0);
         transform-origin: 100% 0;
+        border-radius: none;
     }
     to{
         transform: scaleY(1);
         transform-origin: 100% 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }
+
+
+
+/* ================= TEAM-SOCIAL-HANDELS-eftOut ========== */
+
+.team-social-handels-eftOut{
+    animation: social-close 0.5s forwards;
+}
+
+@keyframes social-close {
+    from{
+        transform: scaleY(1);
+        transform-origin: 100% 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+    to{
+        transform: scaleY(0);
+        transform-origin: 100% 0;
+        border-radius: none;
+    }    
+}
+
+
+
+/* =============== TEAM SOCIAL HANDELS (i) ============ */
 
 .team-social-handels i{
     font-size: 1.7rem;
     margin-top: 10px;
-    color: black;
+    color: grey;
 }
+
+
 
 
 
