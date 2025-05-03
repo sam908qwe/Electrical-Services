@@ -1,5 +1,6 @@
-.testimonials{
-    height: 700px;
+.testimonial-container{
+    height: 500px;
     width: 100%;
-    background-color: #0B1A3A;
+    background-color: aqua;
 }
+
