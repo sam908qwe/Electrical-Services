@@ -1,6 +1,116 @@
-.testimonial-container{
-    height: 500px;
-    width: 100%;
-    background-color: aqua;
+.testimonial-main{
+    height: 850px;
+    width: 100vw;
+    background-color:  rgb(164, 164, 177);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.testimonial-header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.testimonial-header p{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+/* =========== Testimonail container ======== */
+
+.testimonial-container{
+    height: 80%;
+    width: 70%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.testimonial-container button{
+    height: 10%;
+    width: 5%;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+}
+
+
+.testimonial-container button i{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.testimonial-slider-container{
+    height: 70%;
+    width: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-left: 10px;
+}
+
+/* ========== TESTIMONIAL SLIDER CONTAINER =========== */
+
+.testimonial-slider-container .slide{
+    height: 70%;
+    width: 32%;
+    border: 1px solid white;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+    filter: blur(0.7px);
+    &:hover{
+        transform: scaleY(1.1);
+    }
+}
+
+
+/* .scale-left-for-test{
+    animation: move-left 2s forwards;
+}
+
+@keyframes move-left {
+    from{
+        transform: translateX(0);
+    }    
+    to{
+        transform: translateX(-105%);
+    }
+}
+
+.scale-right-for-test{
+    animation: move-right 2s forwards;
+}
+
+@keyframes move-right {
+    from{
+        transform: translateX(0);
+    }    
+    to{
+        transform: translateX(105%);
+    }
+} */
