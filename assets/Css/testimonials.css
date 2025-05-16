@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
+/* @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+
+
+
+
+/* ============ Testimonial Main =============== */
+
 .testimonial-main {
     height: 650px;
     width: 100%;
@@ -10,7 +21,11 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
+    background-image: url("../images/testimonialImages/testimonial-main-img.png");
+    background-size: cover;
 }
+
+/* ============== Testimonial Header =============== */
 
 .testimonial-header {
     height: 20%;
@@ -35,7 +50,9 @@
     color: white;
 }
 
+/* ================= Testimonial Swiper ============= */
 /* Swiper base size */
+
 .testimonial-swiper {
   width: 95%;
   max-width: 1000px;
@@ -45,14 +62,15 @@
 
 
 
-/* .original-slide{
-    border: 2px solid black;
-} */
+
+/* =============== Swiper Slide ================ */
+
 /* Slide style */
 .swiper-slide {
   height: 50%;
   width: 100%;  
-  background-color: #f1f1f1;
+  background: transparent;
+  border: 1px solid #fff;
   border-radius: 10px;
   font-size: 1.2rem;
   display: flex;
@@ -62,6 +80,11 @@
   padding: 10px 40px;
   position: relative;
 }
+
+
+
+/* =================== Slide-review-image ================ */
+
 .swiper-slide .slide-review-image{
     height: 25%;
     width: 100%;
@@ -72,31 +95,45 @@
 }
 
 
-.swiper-slide .slide-review-image-container{
-    height: 65px;
-    width: 65px;
+/* ====================== reviewer-name ================ */
+
+.swiper-slide .reviewer-name {
+    height: 100%;
+    width: 65%;
+}
+
+.swiper-slide .reviewer-name h1 {
+    font-size: 2.3rem;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+}
+
+.swiper-slide .reviewer-name p {
+    font-size: 1.2rem;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-weight: 450;
+}
+
+
+/* ================ Slide-review-image-container ================ */
+
+.swiper-slide .slide-review-image-container {
+    height: 80%;
+    width: 28%;
     background-color: white;
     border-radius: 50%;
     margin-top: 10px;
-    background-image: url(../images/reviewer.jpg);
+    background-image: url("../images/testimonialImages/reviewer.jpg");
     background-size: cover;
 }
 
-/* =============== Star Rating Icon ============ */
 
-.star-rating-icon{
-    height: 10%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.star-rating-icon i{
-    color: orange;
-}
+/* ==================== review-text-container ================ */
 
-.review-text-container{
+.review-text-container {
     height: 50%;
     width: 100%;
     border-top: 2px solid black;
@@ -107,11 +144,25 @@
     margin-top: 8px;
 }
 
-.review-text-container p{
+.review-text-container p {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: black;
+}
+
+/* =============== Star Rating Icon ============ */
+
+.star-rating-icon {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-rating-icon i {
+    color: orange;
 }
 
 
@@ -123,10 +174,25 @@
   width: 10px;
 }
 
+
+/* ================ Testimonial Button ============ */
 /* Pagination style */
+
 .swiper-pagination-bullet {
   background-color: #666;
 }
+
+/* Button colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+  height: 20px;
+  width: 10px;
+}
+
+
+/* ============= swiper-pagination-bullet-active ============= */
+
 .swiper-pagination-bullet-active {
   background-color: #000;
 }
