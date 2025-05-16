@@ -1,70 +1,133 @@
-/* "Rubik"   "Cal Sans""Boldonse"; */
 
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
-.testimonial-main-container{
-    min-height: 700px;
+.testimonial-main {
+    height: 650px;
     width: 100%;
-    background-color: #fff;
-    box-sizing: border-box;
-    max-width: 1800px;
-    min-width: 320px;
+    background-color: #b3aaaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.testimonial-header {
+    height: 20%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: wheat; 
+}
+
+.testimonial-header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Swiper base size */
+.testimonial-swiper {
+  width: 95%;
+  max-width: 1000px;
+  height: 350px;
+  margin: 20px auto;
+}
+
+
+
+/* .original-slide{
+    border: 2px solid black;
+} */
+/* Slide style */
+.swiper-slide {
+  height: 50%;
+  width: 100%;  
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 10px 40px;
+  position: relative;
+}
+.swiper-slide .slide-review-image{
+    height: 25%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-.testimonial-wrapper{
-    height: 80%;
-    width: 70%;
-    min-width: 320px;
-    /* overflow: hidden; */
-    /* background-color: aqua; */
-    overflow: hidden;
-    padding: 23px 0;
-    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 
-.testimonial-slides{
-    height: 90%;
+.swiper-slide .slide-review-image-container{
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-image: url(../images/reviewer.jpg);
+    background-size: cover;
+}
+
+/* =============== Star Rating Icon ============ */
+
+.star-rating-icon{
+    height: 10%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
-    justify-content: flex-start;
-    transition: transform 0.5s ease;
-    /* border: 1px solid black; */
+    justify-content: center;
 }
 
-.testimonial-slides .slide{
-    min-height: 360px;
-    width: 30.1%;
-    flex-shrink: 0;
-    max-height: 500px;
-    border: 1px solid black;
-    margin-left: 26px;
-    border-radius: 10px;
-    /* background-color: #fff; */
+.star-rating-icon i{
+    color: orange;
 }
 
+.review-text-container{
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 8px;
+}
 
-
-.testimonial-main-container .slide-left-but,
-.testimonial-main-container .slide-right-but {
-    height: 20%;
-    width: 5%;
-    border: none;
-    background: transparent;
+.review-text-container p{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     color: black;
 }
 
 
-
-.testimonial-main-container button i{
-    font-size: 2.5rem;
-    font-weight: 600;
-    cursor: pointer;
+/* Button colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+  height: 20px;
+  width: 10px;
 }
+
+/* Pagination style */
+.swiper-pagination-bullet {
+  background-color: #666;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
