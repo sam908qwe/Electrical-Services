@@ -14,16 +14,29 @@
 /* ============ Testimonial Main =============== */
 
 .testimonial-main {
-    height: 650px;
+    height: 750px;
     width: 100%;
     background-color: #b3aaaa;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    background-image: url("../images/testimonialImages/testimonial-main-img.png");
-    background-size: cover;
+    position: relative;
 }
+
+.testimonial-main::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/testimonialImages/testimonial-main-bg-img.png");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+
+
 
 /* ============== Testimonial Header =============== */
 
