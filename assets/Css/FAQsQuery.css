@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* ============= FAQs-request-main-container ============= */
+
+
+.FAQs-request-main-container{
+    height: 850px;
+    width: 100%;
+    background-color: rgb(18, 18, 63);
+    padding: 100px 120px;
+}
+
+/* =========== FAQs-and-request-outer ============ */
+
+.FAQs-and-request-outer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* =============== FAQs-container-main ================ */
+
+.FAQs-container-main {
+    height: 100%;
+    width: 55%;
+    border: 2px solid black;
+}
+
+
+/* ============== FAQs-container-header =============== */
+
+.FAQs-container-header {
+    min-height: 20%;
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQs-container-header p{
+    font-size: 0.8rem;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.FAQs-container-header h1{
+    font-size: 2.2rem;
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+/* ============= FAQ's major qustions ============ */
+
+/* ============= Container FAQ's =========== */
+
+.FAQs{
+    min-height: 78%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orange;
+}
+
+
+/* =============== FAQs Qustions boxes =========== */
+
+.FAQsques {
+    height: 15%;
+    width: 100%;
+    border: 1px solid green;
+}
