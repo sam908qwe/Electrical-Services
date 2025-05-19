@@ -28,13 +28,16 @@
 .faqs-header {
     width: 100%;
     height: calc((156 / 673 ) * 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .faqs-header .faq-header-head {
     font-size: 1rem;
     font-family: "Rubik",sans-serif;
     font-weight: 700;
-    color: White;
+    color: #3D90D7;
 }
 
 .faqs-header .faq-header-para {
@@ -60,6 +63,25 @@
     height: calc((64 / 504) * 100%);
     width: 100%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.faq-and-queries .faq .doubt {
+    font-size: 1.1rem;
+    font-family: "Cal Sans",sans-serif;
+    font-weight: 300;
+    color: #000000c0;
+}
+
+.faq-and-queries .faq .solution {
+    font-size: 1rem;
+    font-family: "Rubik"sans-serif;
+    font-weight: 200;
+    color: #222222;
+    margin-top: 20px;
+    display: none;
 }
 
 
@@ -93,7 +115,7 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
-    background-color: #fff;
+    background-color: #ECFAE5;
 }
 
 
@@ -105,12 +127,12 @@
     background-color: #B59C23;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 50px 34.5px;
 }
 
 .faq-message-header h1 {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
     color: #000;
@@ -118,10 +140,13 @@
 
 .faq-message-header p {
     font-size: 1rem;
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 200;
-    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #222222;
+    margin-top: 5px;
+    line-height: 1.4;
 }
+
 
 
 
@@ -137,12 +162,49 @@
 .faq-message-form {
     height: calc((473 / 673) * 100%);
     width: 100%;
-    background-color: #fff;
-
+    background-color: #B59C23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 
+.faq-message-input,
+.faq-message-textarea,
+#faq-message-button {
+    font-size: 1.2rem;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFF085;
+    border: none;
+}
+
+.faq-message-input {
+    width: calc((459 / 528) * 100%);
+    height: calc((63 / 473) * 100%);
+}
 
 
+.faq-message-textarea {
+    width: calc((459 / 528) * 100%);
+    height: calc((100 / 473) * 100%);
+}
 
-
+#faq-message-button {
+    height: calc((69 / 473) * 100%);
+    width: calc((459 / 528) * 100%);
+    margin-bottom: 5px;
+    background-color: #051724;
+    font-size: 1rem;
+    font-family: "Rubik",sans-serif;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
