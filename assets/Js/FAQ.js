@@ -14,8 +14,12 @@ faqes.forEach((faq) => {
 
 // submit button section //
 
-let submitBut = document.querySelector("#faq-message-button");
+let submitBut = document.querySelector(".faq-message-button");
 
 submitBut.addEventListener("mouseover", (evt) => {
-    evt.currentTarget.classList.add(".faq-message-button-mouseover");
+    evt.currentTarget.style.backgroundColor = "#309898";
+})
+
+submitBut.addEventListener("mouseleave", (evt) => {
+    evt.currentTarget.style.backgroundColor = "#051724"
 })

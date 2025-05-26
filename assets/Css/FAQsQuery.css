@@ -224,10 +224,12 @@
     align-items: center;
     justify-content: center;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 
 
 
-/* =========== faq message button effect ============ */
 
+
+/* ============ faq message button effect ============ */
