@@ -4,7 +4,7 @@
 /* ======== blog container ============ */
 
 .blog-container {
-    height: 850px;
+    min-height: 850px;
     width: 100%;
     padding: 113px 119px;
     background-color: #F0F2F6;
