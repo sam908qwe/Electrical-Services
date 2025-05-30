@@ -1,133 +1,85 @@
-.navbar{
-    background-color: #fff;
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    padding: 5px 10px;
-    height: 150px;
+.navbar {
+    height: 110px;
     width: 100%;
-    overflow: hidden;
-    /* margin: 10px; */
-    /* position:relative;
-    z-index: 1000; */
-}
-
-.logo{
-    height: 150px;
-    width: 150px;
-    margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 5px;
 }
 
-.logo img{
-    height: 90%;
-    width: 90%;
-}
-
-.navList{
-    width: 60%;
+.nav-main-logo {
     height: 95%;
-    margin: 0 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
+    width: 120px;
+    border: 1px solid #222;
+    margin-left: 40px;
 }
 
-.navLinks{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.nav-main-logo img {
+    height: 100%;
     width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* &:hover{
-        color: #11ADED;
-    } */
 }
 
-.navLinks a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding: 10px 20px;
-    &:hover{
-        color: #11ADED;
+/* ========== nav Lists ========== */
+
+.nav-Lists {
+    height: 95%;
+    width: 50%;
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+}
+
+.nav-Lists ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    & li {
+        list-style: none;
     }
 }
 
-.searchIcon{
+
+/* ========== nav search bar ========== */
+
+.nav-search-bar {
+    height: 95%;
+    max-width: 30%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    margin: 0 40px;
+    border: 1px solid #222;
+    padding-left: 10px;
 }
 
-.searchIcon img{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    &:hover{
-        transform: scale(1.1);
-        transition: all 0.1s ease-in-out;
-    }
-}
-
-
-/* styling for serach icon hover */
-
-.search-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
+.nav-input {
+    visibility: hidden;
+    border: none;
     display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+    border-radius: 4px;
+    background-color: green;
+    transition: all 2s ease-in-out;
 }
 
-.searchBox{
-    padding: 15px 25px;
-    font-size: 18px;
-    border: none;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    max-width: 400px;
-    border: none;
-    height: 50px;
+.nav-input-after {
+    height: 65%;
+    width: 300px;
+    display: block;
 }
 
-.icon-overlay{
-    background-color: rgb(242, 255, 0);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+.nav-search-bar button {
+    height: 65%;
+    width: 60px;
+    border: none;
+    background: transparent;
+}
+
+.nav-search-bar button i {
+    font-size: 2rem;
+    color: #222;
     cursor: pointer;
 }
-
-
-/*special class for navbar desing */
-
-/*poora web page banne ke baad kaam hoga isme */
-
-/* .fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-

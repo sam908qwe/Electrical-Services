@@ -28,33 +28,31 @@
 </style>
 
 <body>
-    <nav class="navbar">
-  <div class="logo">
-    <a href="index.html"><img src="../assets/images/logo.png"></a>
-  </div>
 
-  <!--Nav links-->
-  <div class="navList">
-    <ul class="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="pages.html">Pages</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </div>
-  <!--Serch icon-->
-  <div class="searchIcon">
-    <img src="../assets/images/search.png" alt="serchIcon">
-  </div>
-</nav>
+    <!-- =================== Navbar Section ================ -->
 
-<div class="search-overlay" id="searchOverlay">
-    <input type="text" placeholder="Search..." class="searchBox"/>
-    <img src="../assets/images/search.png" alt="searchIcon" class="icon-overlay">
-  </div>
+    <div class="navbar">
+      <div class="nav-main-logo">
+        <img src="../assets/images/logoMain/mainlogo.png" alt="logo">
+      </div>
+      <div class="nav-Lists">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="nav-search-bar">
+        <input type="text" placeholder="Search" class="nav-input">
+        <button class="navbar-search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
 
   <!--Hero Section-->
 
@@ -824,58 +822,108 @@
 
 
 
-<!-- ===================== Main Footer Container =================-->
+<!-- =============== footer section  ====================-->
 
-<div class="footer-main-container">
+<div class="footer-container">
 
-  <!-- =============== footer Top =============== -->
-   <div class="footer-top">
+  <!--============= footer top =================-->
+  <div class="footer-top">
 
-    <div class="footer-location">
-      <span class="location-logo"></span>
-      <p>54B, Tailstoi Town 5238 MT,</p>
-      <p>La city, IA 522364</p>
+    <div class="footer-top-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>54B, Tailstoi Town 5238 MT, <br>
+         La city, IA 522364
+      </p>
     </div>
 
-
-    <div class="footer-email">
-      <span class="footer-email-logo"></span>
-      <p>Email Us:</p>
-      <P>easyservice02@.com</P>
+    <div class="footer-top-box" id="middle-footer-box">
+      <i class="fa-solid fa-envelope-open"></i>
+      <p>
+         Email Us: <br> easyservice@gmail.com
+      </p>
     </div>
 
-
-    <div class="footer-contact">
-      <span class="footer-phone-logo"></span>
-      <p>Call Us On:</p>
-      <P>+ 1800 456 7890</P>
+    <div class="footer-top-box">
+      <i class="fa-solid fa-phone"></i>
+      <p>
+        Contact Us: <br> 
+        <span>8055 302 4989</span>
+      </p>
     </div>
+
+  </div>
+
+<!-- =============== footer body main ===============-->
+
+<div class="footer-body-main">
+
+  <div class="footer-body-box footer-box-I">
+    <img src="../assets/images/logo.png" alt="logo">
+    <p>
+      Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+    </p>
+  </div>
+
+
+  <div class="footer-body-box">
+    <div>
+      <h1>Useful Links</h1>
+      <ul>
+        <a href="#"><li><p>Home</p></li></a>
+        <a href="#"><li><p>About Us</p></li></a>
+        <a href="#"><li><p>appointment</p></li></a>
+        <a href="#"><li><p>Testimonials</p></li></a>
+        <a href="#"><li><p>Contact Us</p></li></a>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="footer-body-box">
+    <div>
+      <h1>Our Services</h1>
+      <ul>
+        <a href="#"><li><p>Refrigerator</p></li></a>
+        <a href="#"><li><p>Microwave</p></li></a>
+        <a href="#"><li><p>Washing Machine</p></li></a>
+        <a href="#"><li><p>Water Heater</p></li></a>
+        <a href="#"><li><p>AC</p></li></a>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="footer-body-box box-newsletter">
+    <h1>Newsletter</h1>
+    <p>Get Latest Updates and offers</p>
+
+    <form action="#" class="footer-form">
+      <input type="text" placeholder="Enter Your Email" name="Email" required>
+      <button class="footer-form-button"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+
+
+<!-- ============ footer social handels ============-->
+
+
+     
     
-   </div>
 
-   <!-- ============= footer main body ===========-->
+  </div>
+  
+</div>
 
-   <div class="footer-body">
+<div class="footer-body-copyright">
+  <p>© Copyright Assimox 2022 . All right reserved.</p>
+</div>
 
-    <!-- ============== footer logo ==============-->
-     <div class="footer-logo"></div>
 
-     <!-- ============ footer useful links ==========-->
-     <div class="footer-useful-links"></div>
-
-     <!-- ============ footer services ===========-->
-      <div class="footer-services"></div>
-
-     <!-- ============= footer News Letter ==========-->
-      <div class="footer-news-letter"></div>
-   </div>
-
-   <!-- ============== footer copyright =============-->
-    <div class="footer-copyright"></div>
 </div>
 
 <!--All JS Files-->
 
+<script src="../assets/Js/navbar.js"></script>
 <script src="../assets/Js/testimonial.js"></script>
 <script src="../assets/Js/ourTeam.js"></script>
 <script src="../assets/Js/service.js"></script>

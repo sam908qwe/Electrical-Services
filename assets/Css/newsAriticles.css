@@ -4,7 +4,7 @@
 /* ======== blog container ============ */
 
 .blog-container {
-    min-height: 850px;
+    height: 850px;
     width: 100%;
     padding: 113px 119px;
     background-color: #F0F2F6;
@@ -96,12 +96,6 @@
     background-image: url("../images/TeamEngineer1.jpg");
     background-size: cover;
 }
-
-/* .article-box-container .article-box-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-} */
 
 
 .article-box-container .article-box-tittle {
