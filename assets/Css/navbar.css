@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=Fjalla+One&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
 .navbar {
     height: 110px;
     width: 100%;
@@ -6,12 +12,12 @@
     justify-content: flex-start;
     padding: 10px;
     gap: 5px;
+    background-color: #F3F3E0;
 }
 
 .nav-main-logo {
     height: 95%;
     width: 120px;
-    border: 1px solid #222;
     margin-left: 40px;
 }
 
@@ -25,7 +31,6 @@
 .nav-Lists {
     height: 95%;
     width: 50%;
-    border: 1px solid #222;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -37,9 +42,23 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 80px;
+    justify-content: center;
+    gap: 30px;
+
+    & a {
+        text-decoration: none;
+    }
+
     & li {
+        font-size: 1.1rem;
         list-style: none;
+        color: #222;
+        font-family: "Rubik",sans-serif;
+        font-weight: 400;
+
+        &:hover {
+            color: #47999f;
+        }
     }
 }
 
@@ -52,30 +71,47 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #222;
     padding-left: 10px;
+    margin-left: 10px;
 }
 
 .nav-input {
-    visibility: hidden;
-    border: none;
+    border: 0.5px solid #7e7c7c;
     display: none;
-    border-radius: 4px;
-    background-color: green;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     transition: all 2s ease-in-out;
+    font-size: 1.3rem;
+    color: #222;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .nav-input-after {
     height: 65%;
     width: 300px;
     display: block;
+    animation: height-animation 1s forwards;
+    animation-direction: initial;
+}
+
+@keyframes height-animation {
+    from {
+        width: 0px;
+    } 
+    to {
+        width: 300px;
+    }
 }
 
 .nav-search-bar button {
     height: 65%;
     width: 60px;
-    border: none;
+    border: 0.5px solid #7e7c7c;
     background: transparent;
+    border-radius: 4px;
 }
 
 .nav-search-bar button i {
@@ -83,3 +119,20 @@
     color: #222;
     cursor: pointer;
 }
+
+
+/* =========== nav go button after ========= */
+
+.nav-go-but-after {
+    height: 65%;
+    width: 60%;
+    border: none;
+    border-radius: 5%;
+    background-color: #ffffff92;;
+    display: none;
+    font-size: 2rem;
+    color: #222;
+    transition: all 0.7s ease-in-out;
+}
+
+
